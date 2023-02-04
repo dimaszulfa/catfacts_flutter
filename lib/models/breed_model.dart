@@ -1,36 +1,46 @@
-import 'dart:convert';
-import 'dart:developer';
-
-import 'package:http/http.dart' as http;
-
 class BreedModel {
-  final String facts;
+  String breed;
+  String country;
+  String origin;
+  String coat;
+  String pattern;
+  BreedModel(
+      {required this.breed,
+      required this.country,
+      required this.origin,
+      required this.coat,
+      required this.pattern});
 
-  BreedModel({required this.facts});
-
-  static final List<BreedModel> data = [
+  static List<BreedModel> data = [
     BreedModel(
-        facts:
-            "When a cat chases its prey, it keeps its head level. Dogs and humans bob their heads up and down."),
+        breed: "Abyssinian",
+        country: "Ethiopia",
+        origin: "Natural/Standard",
+        coat: "Short",
+        pattern: "Ticked"),
     BreedModel(
-        facts:
-            "Unlike dogs, cats do not have a sweet tooth. Scientists believe this is due to a mutation in a key taste receptor."),
-    BreedModel(facts: "The technical term for a cat’s hairball is a “bezoar."),
-    BreedModel(facts: "A group of cats is called a “clowder."),
+        breed: "Aegean",
+        country: "Greece",
+        origin: "Natural/Standard",
+        coat: "Semi-long",
+        pattern: "Bi- or tri-colored"),
     BreedModel(
-        facts:
-            "A cat can’t climb head first down a tree because every claw on a cat’s paw points the same way. To get down from a tree, a cat must back down."),
+        breed: "American Curl",
+        country: "United States",
+        origin: "Mutation",
+        coat: "Short/Long",
+        pattern: "All"),
     BreedModel(
-        facts:
-            "Cats make about 100 different sounds. Dogs make only about 10."),
+        breed: "American Bobtail",
+        country: "United States",
+        origin: "Mutation",
+        coat: "Short/Long",
+        pattern: "All"),
     BreedModel(
-        facts: "Every year, nearly four million cats are eaten in Asia."),
-    BreedModel(
-        facts:
-            "There are more than 500 million domestic cats in the world, with approximately 40 recognized breeds."),
-    BreedModel(facts: "Approximately 24 cat skins can make a coat."),
-    BreedModel(
-        facts:
-            "While it is commonly thought that the ancient Egyptians were the first to domesticate cats, the oldest known pet cat was recently found in a 9,500-year-old grave on the Mediterranean island of Cyprus. This grave predates early Egyptian art depicting cats by 4,000 years or more."),
+        breed: "United States",
+        country: "United States",
+        origin: "Natural",
+        coat: "Short",
+        pattern: "All but colorpoint"),
   ];
 }

@@ -16,14 +16,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: [
       HomeSizedBox(bodyheightScreen: bodyheightScreen),
-      // Expanded(
-      //     child: ListView.builder(
-      //   shrinkWrap: true,
-      //   itemCount: 20,
-      //   itemBuilder: (context, index) {
-      //     return Text("data ${index}");
-      //   },
-      // ))
     ]);
   }
 }

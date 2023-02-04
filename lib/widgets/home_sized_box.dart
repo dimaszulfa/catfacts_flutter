@@ -25,8 +25,11 @@ class HomeSizedBox extends StatelessWidget {
               alignment: Alignment.center,
               padding: const EdgeInsets.all(16),
               child: const Text(
-                "Let's know the facts about cats and their offspring",
-                style: TextStyle(color: Colors.white),
+                "Let's know the facts about cats",
+                style: TextStyle(
+                    color: Colors.white,
+                    overflow: TextOverflow.ellipsis,
+                    fontSize: 15),
               )),
           Positioned(
             top: 0,
